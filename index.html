@@ -76,18 +76,15 @@
   }
   .nav-logo .logo-mark {
     width: 36px; height: 36px;
-    background: linear-gradient(135deg, var(--accent), var(--purple));
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700; font-size: 15px; color: #fff;
     box-shadow: 0 0 18px rgba(59,130,246,0.4);
     position: relative; overflow: hidden;
+    background: #000;
   }
-  .nav-logo .logo-mark::after {
-    content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+  .nav-logo .logo-mark img {
+    width: 100%; height: 100%; object-fit: cover; border-radius: 8px;
+    filter: brightness(1.1);
   }
   .nav-logo span {
     font-family: 'Rajdhani', sans-serif;
@@ -161,35 +158,17 @@
   }
 
   .hero-logo-img {
-    width: 90px; height: 90px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
-    border-radius: 20px;
+    width: 110px; height: 110px;
+    border-radius: 22px;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 900; font-size: 36px; color: #fff;
     box-shadow: 0 0 50px rgba(59,130,246,0.5), 0 0 100px rgba(124,58,237,0.2);
     margin: 0 auto 28px;
-    animation: fadeUp 0.8s 0.1s ease both;
-    position: relative; overflow: hidden;
+    background: #000;
+    overflow: hidden;
   }
-  .hero-logo-img::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 50%);
-    border-radius: inherit;
-  }
-  .hero-logo-img::after {
-    content: '';
-    position: absolute;
-    width: 200%; height: 200%;
-    top: -50%; left: -150%;
-    background: rgba(255,255,255,0.08);
-    transform: rotate(35deg);
-    animation: sheen 3s ease-in-out infinite;
-  }
-  @keyframes sheen {
-    0% { left: -150%; }
-    50%, 100% { left: 150%; }
+  .hero-logo-img img {
+    width: 100%; height: 100%; object-fit: cover; border-radius: 22px;
+    filter: brightness(1.15) contrast(1.05);
   }
 
   .hero h1 {
@@ -573,7 +552,7 @@
 <!-- NAVBAR -->
 <nav>
   <div class="nav-logo">
-    <div class="logo-mark">BL</div>
+    <div class="logo-mark"><img src="logo.webp" alt="BL"></div>
     <span>Bhosdu Launcher</span>
     <span class="version-tag">v1.0</span>
   </div>
@@ -589,7 +568,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eyebrow">🎮 Minecraft Launcher — Version 1.0</div>
-  <div class="hero-logo-img">BL</div>
+  <div class="hero-logo-img"><img src="logo.webp" alt="Bhosdu Launcher Logo"></div>
   <h1>Bhosdu Launcher</h1>
   <p class="hero-sub">A modern, blazing-fast Minecraft launcher with Microsoft Auth, Modrinth integration, and multi-loader support — built for players who demand more.</p>
   <div class="hero-actions">
